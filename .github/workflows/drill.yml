@@ -1,0 +1,13 @@
+name: DRILL
+
+on:
+  workflow_dispatch:
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit marker
+        run: |
+          echo "DRILL-FAIL"
+          exit 1
